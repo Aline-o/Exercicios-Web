@@ -1,0 +1,15 @@
+<html>
+	<body>
+	{% if  result["status"] == "correto" %}
+		Login realizado com sucesso
+	{% elif result["status"] == "senha_incorreta" %}
+		Senha incorreta
+	{% elif result["status"] == "usuario_incorreto" %}
+		Usuario incorreto
+	{% else %}
+		Erro de programação
+	{% endif %}
+	
+		<a href="/home"> home </a>
+	</body>
+</html>
